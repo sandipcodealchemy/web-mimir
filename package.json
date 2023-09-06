@@ -11,7 +11,7 @@
     "typeGen": "yarn supabase gen types typescript --project-id \"jvcvhatxolqvdramanhr\" --schema public > src/supabase.ts"
   },
   "engines": {
-    "node": "18.16.0"
+    "node": "18.17.1"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
