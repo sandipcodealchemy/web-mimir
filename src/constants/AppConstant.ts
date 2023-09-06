@@ -1,0 +1,162 @@
+const AppConstant = {
+  LESSON_PLANNING: 'Lesson planning',
+  GRADING: 'Grading',
+  NAME: 'Name',
+  EMAIL: 'Email',
+  PASSWORD: 'Password',
+  CONFIRM_PASSWORD: 'Confirm password',
+  LOGIN_MIMIR: 'Log in to Mimir',
+  DONT_ACCOUNT: 'Don’t have an account?',
+  CREATE_ACCOUNT: 'Create account',
+  CONTINUE: 'Continue',
+  CREATE_YOUR_MIMIR_ACCOUNT: 'Create your Mimir account',
+  ALREADY_ACCOUNT: 'Already have an account?',
+  LOG_IN: 'Log in',
+  NEW_LESSON: 'New lesson',
+  NEW_LESSON_PLAN: 'New lesson plan',
+  NEW_ASSIGNMENT: 'Add new assignment',
+  GET_STARTED_BY: 'Get started by creating a new lesson plan',
+  PREV_LESSON_PLANS: 'Previous lesson plans',
+  SUBJECT: 'Subject',
+  LESSON_TOPIC: 'Lesson topic',
+  GRADE_LEVEL: 'Grade level',
+  ARE_YOU_SURE_GRADE_EDIT: 'Are you sure you want to Edit this Grade level?',
+  ARE_YOU_SURE_GRADE_DELETE:
+    'Are you sure you want to delete this Grade level?',
+  DEVELOPMENT_OF_SKILLS: 'Development of skills in close reading',
+  COPY_TO_CLIPBOARD: 'Copy to clipboard',
+  EXPORT: 'Export',
+  STUDENT_NAME: 'Student name',
+  ARE_YOU_SURE_STUDENT_EDIT: 'Are you sure you want to Edit this Student?',
+  ARE_YOU_SURE_ASIGN_DELETE: 'Are you sure you want to delete this Assignment?',
+  ARE_YOU_SURE_STUDENT_DELETE: 'Are you sure you want to delete this Student?',
+  ASSIGNMENT_QUE: 'Assignment question',
+  STUDENT_RESP: 'Student`s response',
+  GENERATE: 'Generate',
+  GENERATE_NEWS: 'Generate New',
+  REGENERATE: 'Regenerate',
+  CLEAR_INPUTS: 'Clear inputs',
+  CLASS_NAME: 'Class name',
+  AUR_YOU_SURE_CLASS_EDIT: 'Are you sure you want to Edit this Class?',
+  AUR_YOU_SURE_CLASS_DELETE: 'Are you sure you want to delete this Class?',
+  ASSIGN_NAME: 'Assignment name',
+  SELECT_CLASS: 'Select class*',
+  ADD_NEW: 'Add New',
+  ADD: 'Add',
+  CANCEL: 'Cancel',
+  STUDENTS: 'Students',
+  GRADE_LEVELS: 'Grade levels',
+  CLASSES: 'Classes',
+  QUESTIONS: 'Questions',
+  QUESTION: 'Question',
+  ARE_YOU_SURE_QUESTION_EDIT: 'Are you sure you want to Edit this Question?',
+  ARE_YOU_SURE_QUESTION_DELETE:
+    'Are you sure you want to delete this Question?',
+  ARE_YOU_SURE_ASSIGNMENT_EDIT:
+    'Are you sure you want to Edit this Assignment?',
+  ARE_YOU_SURE_ASSIGNMENT_DELETE:
+    'Are you sure you want to delete this Assignment?',
+  ASSIGNMENT: 'Assignment',
+  ASSIGNMENTS: 'Assignments',
+  ADD_NEW_GRADE_LEVEL: 'Add new grade level',
+  ADD_NEW_STUDENT: 'Add new student',
+  ADD_NEW_CLASS: 'Add new class',
+  EDIT: 'Edit',
+  DELETE: 'Delete',
+  ASSIGNMENT_QUESTIONS: 'Assignment questions',
+  ADD_NEW_QUESTION: 'Add new question',
+  CLASS: 'Class',
+  NEW_ASSIGN: 'New assignment',
+  SELECT_QUESTIONS: 'Select questions',
+  SELECT_ASSIGN_QUESTION: 'Select assignment question',
+  SELECT_ALL: 'Select all',
+  SELECTED_QUES: 'Selected questions',
+  ALL_ASSIGNMENT: 'All assignment',
+  SAVE_ASSIGNMENT: 'Save assignment',
+  ADD_QUESTIONS: 'Add questions',
+}
+
+const MSG = {
+  LOGIN_SUCCESS: 'Login Successfully',
+  PASSWORD_NOT_MATCH: 'Password and Confirm password not matched!',
+  SINGUP_SUCCESS: 'Sign Up Successfully',
+  NEW_LESSON_BLANK_FIELD: 'fill up all fields',
+  ADD_NEW_LESSON: 'Add new lesson successfully',
+
+  ADD_NEW_STUDENT: 'Student added successfully',
+  EDIT_STUDENT: 'Student edited successfully',
+  DELETE_STUDENT: 'Student deleted successfully',
+
+  ADD_NEW_GRADE_LEVEL: 'Grade level added successfully',
+  EDIT_GRADE_LEVEL: 'Grade level edited successfully',
+  DELETE_GRADE_LEVEL: 'Grade level deleted successfully',
+
+  ADD_NEW_CLASS: 'Class added successfully',
+  EDIT_CLASS: 'Class edited successfully',
+  DELETE_CLASS: 'Class deleted successfully',
+
+  ADD_NEW_ASSIGNMENT: 'Assignemnt added successfully',
+  EDIT_ASSIGNMENT: ' Assignemnt edited successfully',
+  DELETE_ASSIGNMENT: ' Assignemnt deleted successfully',
+
+  ADD_NEW_QUESTION: 'Question added successfully',
+  EDIT_QUESTION: 'Question edited successfully',
+  DELETE_QUESTION: 'Question deleted successfully',
+
+  UPDATE_LESSON: 'Update lesson successfully',
+  CLASS_NOT_BLANK: "Class name can't be blank",
+  ASSIGN_NOT_BLANK: "Assignment name can't be blank",
+  ALEREDY_EXISTS: 'already exists',
+  ADD_NEW_ASSIGN: 'Add New Assignment',
+  COPY: 'copy',
+  WRITE_TEXT: 'write any text',
+  WRITE_SOMETHING: 'write something...!',
+  GENERATE_GRADING_SUCCESS: 'Generate grading successfully',
+}
+
+const TABLE = {
+  ADD_NEW_LESSON: 'addNewLesson',
+  ADD_CLASS_NAME: 'addClassName',
+  ADD_ASSIGNMENT: 'addAssignment',
+  ADD_GRADING: 'addGrading',
+  // -------------------------------
+  STUDENTS: 'students',
+  TEACHERS: 'teachers',
+  CLASSES: 'classes',
+  CLASS_STUDENTS: 'class_students',
+  LESSON_PLANS: 'lesson_plans',
+  TEST_QUESTIONS: 'test_questions',
+  ASSIGNMENTS: 'assignments',
+  QUESTIONS: 'questions',
+  SUBMISSIONS: 'submissions',
+  GRADE_LEVELS: 'grade_levels',
+  ASSIGNMENT_QUESTIONS: 'assignment_questions',
+}
+
+const ROUTE = {
+  REGISTER: '/register',
+  LOGIN: '/login',
+  HOME: '/',
+  NEW_LESSON: '/newLesson',
+  GRADING: '/grading',
+  LESSION_DETAILS: '/lessonDetail',
+  GRADE_LEVEL: '/gradeLevel',
+  STUDENTS: '/students',
+  CLASSES: '/classes',
+  QUESTIONS: '/questions',
+  ASSIGNMENTS: '/assignments',
+  NEW_ASSIGNMENT: '/newAssignment',
+}
+
+const I_TYPE = {
+  TEXT: 'text',
+  PASSWORD: 'password',
+}
+
+const PROMPTS = {
+  LESSON_PLAN:
+    'You generate clear and comprehensive lesson plans for teachers to teach their class. Please generate a 10th grade lesson plan for the following topic:',
+  grading: '',
+}
+
+export { AppConstant, MSG, TABLE, ROUTE, I_TYPE, PROMPTS }

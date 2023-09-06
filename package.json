@@ -1,0 +1,52 @@
+{
+  "name": "web-mimir-orange",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typeGen": "yarn supabase gen types typescript --project-id \"jvcvhatxolqvdramanhr\" --schema public > src/supabase.ts"
+  },
+  "engines": {
+    "node": "18.16.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.3",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@supabase/supabase-js": "^2.31.0",
+    "@szhsin/react-menu": "^4.0.2",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "devextreme": "23.1",
+    "devextreme-react": "23.1",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "eventsource-parser": "^1.0.0",
+    "js-file-download": "^0.4.12",
+    "jsonwebtoken": "^9.0.1",
+    "jspdf": "^2.5.1",
+    "next": "13.4.12",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "^8.1.2",
+    "react-toastify": "^9.1.3",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.2",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "supabase": "^1.82.6"
+  }
+}

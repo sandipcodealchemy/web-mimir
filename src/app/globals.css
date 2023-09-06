@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.text_MB_16 {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+}
+
+.text_R_18 {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text_R_16 {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.text_R_14 {
+  font-family: 'Quicksand';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.text_RB_28 {
+  font-family: 'Quicksand';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+}
+
+.text_RB_18 {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+}
+
+.text_RB_16 {
+  font-family: 'Quicksand';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.text_R_12 {
+  font-family: 'Quicksand';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+.mx38 {
+  margin: 0px 38px;
+}
+
+.br6 {
+  border-radius: 6px;
+}
+.public-DraftStyleDefault-block {
+  margin: 0 !important;
+}
+
+.rdw-editor-toolbar {
+  justify-content: center !important;
+}
+
+.dx-toolbar.dx-toolbar-multiline .dx-toolbar-items-container {
+  justify-content: center;
+}
+
+.dx-htmleditor-content {
+  height: calc(100vh - 350px) !important;
+}
+
+@layer base {
+  *:focus {
+    outline: none;
+  }
+}
