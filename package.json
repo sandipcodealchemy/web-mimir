@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "postinstall": "next build",
     "typeGen": "yarn supabase gen types typescript --project-id \"jvcvhatxolqvdramanhr\" --schema public > src/supabase.ts"
   },
   "engines": {
