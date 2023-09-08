@@ -1,3 +1,4 @@
+import { NextResponse } from 'next/server'
 import { OpenAIStream, OpenAIStreamPayload } from '../../../utils/OpenAIStream'
 
 if (!process.env.OPENAI_API_KEY) {
@@ -36,5 +37,5 @@ export async function POST(req: Request): Promise<Response> {
   console.log('STREAM')
   console.log(stream)
   console.log()
-  return new Response()
+  return new Response(stream)
 }

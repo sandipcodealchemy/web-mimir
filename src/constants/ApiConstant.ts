@@ -1,6 +1,6 @@
 // export const BASE_URL=  'http://localhost:3000/api'
 // export const BASE_URL= 'https://web-mimir-orange.onrender.com/api'
-export const BASE_URL = process.env.BASE_URL
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
 const API_CONSTANT = {
   LOGIN: '/login',
