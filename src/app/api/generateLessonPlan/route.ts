@@ -36,5 +36,5 @@ export async function POST(req: Request): Promise<Response> {
   console.log('STREAM')
   console.log(stream)
   console.log()
-  return new Response(stream)
+  return new Response()
 }

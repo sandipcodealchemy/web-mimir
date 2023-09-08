@@ -43,24 +43,27 @@ export default function NewLesson() {
       }),
     })
 
-    if (!response.ok) {
-      throw new Error(response.statusText)
-    }
+    const result = await response.json()
+    setGPTOutput(result)
 
-    const data = response.body
-    if (!data) {
-      return
-    }
-    const reader = data.getReader()
-    const decoder = new TextDecoder()
-    let done = false
+    // if (!response.ok) {
+    //   throw new Error(response.statusText)
+    // }
 
-    while (!done) {
-      const { value, done: doneReading } = await reader.read()
-      done = doneReading
-      const chunkValue = decoder.decode(value)
-      setGPTOutput((prev: string) => prev + chunkValue)
-    }
+    // const data = response.body
+    // if (!data) {
+    //   return
+    // }
+    // const reader = data.getReader()
+    // const decoder = new TextDecoder()
+    // let done = false
+
+    // while (!done) {
+    //   const { value, done: doneReading } = await reader.read()
+    //   done = doneReading
+    //   const chunkValue = decoder.decode(value)
+    //   setGPTOutput((prev: string) => prev + chunkValue)
+    // }
     setLoading(false)
   }
 
